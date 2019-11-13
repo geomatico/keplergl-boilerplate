@@ -4,7 +4,7 @@ import window from 'global/window'
 import KeplerGl from 'kepler.gl'
 import {connect} from 'react-redux';
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiZnBzYW1wYXlvIiwiYSI6ImNrMnZseWs0dDA2MnMzZ3ZwNDh1MG1kMWoifQ.Gz2WvC1jNbX69AYX-fgR-Q'
+const MAPBOX_TOKEN = ''
 
 class App extends Component {
   state = {
