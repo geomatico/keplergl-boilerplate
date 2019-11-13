@@ -14,6 +14,34 @@ class App extends Component {
     marginTop: 0
   };
 
+  replaceDefaultStyles = true;
+  mapStyles = [
+    {
+      id: 'basic',
+      label: 'Basic',
+      url: 'http://localhost:8080/styles/klokantech-basic/style.json',
+      icon: `http://localhost:8080/styles/klokantech-basic/12/2071/1529.png`,
+      layerGroups: [] // DEFAULT_LAYER_GROUPS
+    },{
+      id: 'basic-cadastre',
+      label: 'Basic Cadastre',
+      url: 'http://localhost:8080/styles/klokantech-3d/style.json',
+      icon: ``,
+      layerGroups: [] // DEFAULT_LAYER_GROUPS
+    },{
+      id: 'dark',
+      label: 'Dark Matter',
+      url: 'http://localhost:8080/styles/dark-matter/style.json',
+      icon: `http://localhost:8080/styles/dark-matter/12/2071/1529.png`,
+      layerGroups: [] // DEFAULT_LAYER_GROUPS
+    },{
+      id: 'dark-cadastre',
+      label: 'Dark Matter Cadastre',
+      url: 'http://localhost:8080/styles/dark-matter-3d/style.json',
+      icon: ``,
+      layerGroups: [] // DEFAULT_LAYER_GROUPS
+    }
+  ];
 
   render () {
     return (
@@ -30,6 +58,8 @@ class App extends Component {
             <KeplerGl
               id="map"
               mapboxApiAccessToken={MAPBOX_TOKEN}
+              mapStylesReplaceDefault={this.replaceDefaultStyles}
+              mapStyles={this.mapStyles}
               width={width}
               height={height}
             />
