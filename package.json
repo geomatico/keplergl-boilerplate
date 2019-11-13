@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "global": "^4.4.0",
+    "kepler.gl": "^1.1.10",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-palm": "^3.1.2",
+    "react-redux": "^4.4.5",
+    "react-scripts": "3.2.0",
+    "react-virtualized": "^9.21.2",
+    "redux": "^4.0.4",
+    "redux-actions": "^2.6.5",
+    "styled-components": "^4.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
